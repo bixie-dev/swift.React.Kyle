@@ -1,0 +1,20 @@
+.Loader{
+  position: relative;
+  min-height: 80vh;
+  padding-block: 10px;
+  font-family: Montserrat;
+
+  &_msg{
+    margin-top: 100px;
+    text-align: center;
+    color: #949596;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+
+  &_img{
+    transition-duration: 1000ms;
+    text-align: center;
+    margin-top: 15px;
+  }
+}

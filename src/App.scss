@@ -1,0 +1,84 @@
+$border-color: #BBBBBB;
+$contrast-color: #5BB166;
+$clear-color: #E2E2E2;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  // background-color: #16191c;
+  // color: #fcfcfc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#root{
+  position: relative;
+  min-height: 100vh;
+  background-color: #151515;
+  color: #FFFFFF;
+  overflow-x: hidden;
+}
+.App{
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+.section-content-text {
+  font-size: 12px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.section-title {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.swift-card {
+  background-color: #FFFFFF;
+  width: 350px;
+  color: black;
+  border-radius: 1rem;
+
+  & button {
+    color: #FFFFFF;
+    background-color: #FF5315;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+  }
+}
+
+.dot-line {
+  width: 100% !important;
+  border: none;
+  border-top: 1px dotted black;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 50%;
+}
+
+@mixin buttonPrimary {
+  border: none;
+  background-color: transparent;
+}
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@import "./Pages/Home/Home.scss";
+@import "./Pages/Loader/Loader.scss";
+@import "./Pages/Sources/Sources.scss";
+@import "./Pages/NodeUp/NodeUp.scss";
+@import "./Pages/Scan/Scan.scss";
+@import "./Pages/Receive/Receive.scss";
+
+@import "./Containers/Header/Header.scss";
+@import "./Containers/Footer/Footer.scss";
+
+@import "./Components/SwItem/SwItem.scss";
+@import "./Components/Dropdowns/SourceSortDropdown/SourceSortDropdown.scss";

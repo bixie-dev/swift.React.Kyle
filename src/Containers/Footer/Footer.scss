@@ -1,0 +1,47 @@
+.Footer{
+  margin-top: 150px !important;
+  background-color: #000000;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  &_social-group {
+    gap: 25px;
+  }
+
+  &_language-active {
+    background-color: #4584FF;
+  }
+
+  &_subscribe {
+    opacity: 0.8;
+    margin-top: -50px;
+    position: absolute;
+    border-radius: 1rem;
+    width: 70%;
+    background-color: #000000;
+    left: 15%;
+
+    & div:nth-of-type(1) {
+      width: 60%;
+    }
+  }
+
+  &_email_form {
+    width: 40%;
+    & input {
+      border: 1px solid gray;
+      font-size: 12px;
+      color: #FFFF;
+      background: none;
+      background-color: rgh(0, 0, 0, 0);
+      border-radius: 5px;
+    }
+
+    & button {
+      background-color: #FFFF;
+      font-size: 12px;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
