@@ -41,19 +41,19 @@ export const Home: React.FC<PageProps> = ({ }): JSX.Element => {
           </p>
         </div>
         <div className="pt-2 mt-5">
-          <Row>
-            <Col>
+          <Row className="Home_what-swift_row">
+            <Col className="d-flex justify-content-center">
               <Image src={Monitor} className="Home_what-swift_MoiterImg" width={500} />
             </Col>
             <Col>
               <div className="d-flex mt-5">
-                <Image src={Line6} className="Home_what-swift_MoiterImg" height={60} />
+                <Image src={Line6} className="" height={60} />
                 <p className="section-content-text text-start px-3">
                   Beyond just the use of clusters and individual nodes, we have implement fast transaction properties by optimising the underlying blockchain network protocol and improving block propagation times or reducing block confirmation times.
                 </p>
               </div>
               <div className="d-flex mt-5">
-                <Image src={Line8} className="Home_what-swift_MoiterImg" height={40} />
+                <Image src={Line8} className="" height={40} />
                 <p className="section-content-text text-start px-3">
                   High performance tools for active traders and industry-leading security from day one.
                 </p>
@@ -67,9 +67,9 @@ export const Home: React.FC<PageProps> = ({ }): JSX.Element => {
         </div>
       </div>
       <div className='HowToStart_getting-start d-flex mt-5'>
-        <div className="HowToStart_getting-start_content px-5 my-5" style={{backgroundColor: "#FFFF"}}>
-          <h1 className="mt-5 px-5 pt-3 text-black">Getting Started</h1>
-          <p className="mt-5 px-5 text-black">Enter your details to create an account or login with an existing account</p>
+        <div className="HowToStart_getting-start_content px-5 mt-5" style={{backgroundColor: "#FFFF"}}>
+          <h1 className="mt-5 section-title px-5 pt-3 text-black">Getting Started</h1>
+          <h2 className="mt-5 px-5 text-black" style={{fontSize: "22px"}}>Enter your details to create an account or login with an existing account</h2>
           <div className="Home_getting-start_content_buttons px-5 d-flex my-5">
             <button className="border px-5 border py-2">Login</button>
             <div className="d-flex">
@@ -85,7 +85,7 @@ export const Home: React.FC<PageProps> = ({ }): JSX.Element => {
       <div className="Home_affiliate text-center">
         <h1 className="section-title pt-4">Affiliate Program</h1>
         <p className="pt-2 section-content-text">Not a trader? Join our Affilate program to  earn from our services.</p>
-        <div className="Home_affiliate_cards px-5 pt-5">
+        <div className="Home_affiliate_cards px-2 pt-5">
           <div className="d-flex justify-content-center" style={{gap: "40px"}}>
             <div className="swift-card py-4 px-4">
               <div className="d-flex mx-1">

@@ -44,6 +44,10 @@ body{
   color: black;
   border-radius: 1rem;
 
+  @media screen and (max-width: 400px) {
+    width: 100% !important;
+  }
+
   & button {
     color: #FFFFFF;
     background-color: #FF5315;

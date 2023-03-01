@@ -7,9 +7,10 @@
   }
 
   &_download {
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 500px) {
+      display: grid !important;
       & button {
-        display: flex !important;
+        text-align: center;
       }
     }
   }
@@ -43,6 +44,26 @@
     & img {
       // width: 230px;
       height: 270px;
+
+      // @media screen and (max-width: 400px) {
+      //   width: 28%;
+      //   height: auto;
+      // }
+    }
+  }
+
+  &_appstore {
+    @media screen and (max-width: 400px) {
+      & img {
+        width: 300px !important;
+        height: auto;
+      }
+    }
+  }
+
+  &_img {
+    @media screen and (max-width: 400px) {
+      // padding-left: 0 !important;
     }
   }
 

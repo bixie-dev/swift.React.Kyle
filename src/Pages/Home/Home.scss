@@ -21,6 +21,10 @@
       display: flex;
       gap: 20px;
 
+      @media screen and (max-width: 900px) {
+        display: grid !important;
+      }
+
       & button {
         background-color: rgba(255, 255, 255, 0.08);
         border-radius: 2rem;
@@ -40,6 +44,27 @@
   &_what-swift {
     width: 80%;
     margin-left: 10%;
+
+    &_row {
+      display: flex;
+    }
+
+    @media screen and (max-width: 550px) {
+      &_MoiterImg {
+        width: 100%;
+      }
+
+      &_row {
+        display: grid;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      &_row {
+        display: grid;
+      }
+    }
+
     &_content-buttons {
       & button:nth-of-type(1) {
         background: rgba(255, 255, 255, 0.54);
@@ -158,9 +183,13 @@
         display: grid !important;
       }
 
+      
       & div {
         border-radius: 1rem;
         border: 0.2px solid rgb(158, 153, 153);
+        @media screen and (max-width: 400px) {
+          width: 100% !important;
+        }
       }
     }
   }

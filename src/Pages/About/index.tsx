@@ -24,7 +24,7 @@ export const About: React.FC<PageProps> = (): JSX.Element => {
         <h2 className="section-title mt-5 py-3">Why Choose Swift Trade?</h2>
         <p className="mt-2 section-content-text">Trade smarter, not harder - unleash lightning fast profits with our Telegram trading bot</p>
         <div className="d-flex mt-5 pt-3">
-          <Image src={Line6} className="Home_what-swift_MoiterImg" height={50} />
+          <Image src={Line6} className="" height={50} />
           <p className="section-content-text px-3">
           If you're looking to take your trading game to the next level, then you need a tool that can keep up with the fast-paced world of the markets. That's where our lightning-fast trading bot comes in. With our bot, you'll be able to execute trades faster than ever before, taking advantage of split-second opportunities that could make all the difference in your portfolio. Our bot is packed with powerful features, including advanced technical analysis tools, real-time market data, and customizable trading strategies. And best of all, our bot is designed to be easy to use, even for traders who are just getting started. With our bot, you'll have the power to trade smarter, not harder, and take your profits to new heights.
           </p>

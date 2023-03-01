@@ -54,8 +54,7 @@ export const Download: React.FC<PageProps> = (): JSX.Element => {
             <h1 className="section-title text-center mt-5 pt-2">Swift Trade Desktop</h1>
             <Image src={Tablet} className="Download_mission_image mt-5" />
             <div className="justify-content-center d-flex mt-5 Download_download">
-              <button className="Download_mission_button py-2 px-4">Download 
-              {/* <Image src={down} className="ms-1" width={10} height={9} /> */}
+              <button className="Download_mission_button text-center py-2 px-4">Download 
               </button>
               <p className="pt-2 section-content-text px-5">Download our uninstaller
               <Image src={right} className="ms-1" width={10} height={9} /></p>
@@ -65,13 +64,13 @@ export const Download: React.FC<PageProps> = (): JSX.Element => {
           <Col xl={2} className="justify-content-center Download_line10 d-flex">
             <Image src={Rectangle} className="mt-5 Download_line10" height={530} />
           </Col>
-          <Col xl={5} className="text-start mt-1 ps-5">
+          <Col xl={5} className="text-start Download_img mt-1 p-5">
             <h1 className="section-title text-center mt-5 pt-2">Swift Trade Desktop</h1>
             <div className="justify-content-center d-flex Download_phon">
               <Image src={phon1} className="mt-3" />
               <Image src={phon2} className="mt-5" />
             </div>
-            <div className="justify-content-center d-flex">
+            <div className="justify-content-center Download_appstore d-flex">
               <Image src={appstore} className="mt-2" width={340} />
             </div>
           </Col>
