@@ -64,8 +64,9 @@
     }
 
     @media screen and (max-width: 1300px) {
-      width: 95%;
-      left: 3.5%;
+      width: 95% !important;
+      left: 0 !important;
+      margin-left: 2.5% !important;
     }
 
     // & div:nth-of-type(1) {

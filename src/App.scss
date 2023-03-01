@@ -55,6 +55,16 @@ body{
     border-radius: 7px;
     font-size: 15px;
   }
+
+}
+
+button {
+  transition-duration: 300ms !important;
+}
+
+button:hover {
+  background-color: black !important;
+  color: #FFFFFF !important;
 }
 
 .dot-line {
