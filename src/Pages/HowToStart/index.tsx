@@ -1,78 +1,58 @@
-import React from "react";
+import React, { useState } from 'react';
 import { NavigateFunction, useNavigate } from "react-router-dom";
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
+
 import { PageProps } from "../../globalTypes";
-import BackgroundImg from "../../Assets/HomeBackground.png";
-import Rectangle from "../../Assets/Rectangle.png";
-import Tablet from "../../Assets/tablet.png";
-import phon1 from "../../Assets/phon1.png";
-import phon2 from "../../Assets/phon2.png";
-import appstore from "../../Assets/appstore.png";
-import Logo from "../../Assets/g1406.png";
+
+import BackImg from "../../Assets/image_12.png";
+import BackImg10 from "../../Assets/image_10.png";
 import Vector_Enable from "../../Assets/Vector_Enable.png";
 import Vector_Disable from "../../Assets/Vector_Disable.png";
+import Logo from "../../Assets/g1406.png";
+import phone3d from "../../Assets/phone3d.png";
 
-export const NodeUp: React.FC<PageProps> = (): JSX.Element => {
-
-  return(
-    <div className="NodeUp">
-      <div className="Home_dashboard">
-        <Image src={BackgroundImg} className="Home_dashboard_BackImg" />
-        <div className="Home_dashboard_text-content text-center pt-5 mt-3">
-          <h1 className="section-title">Download Swift</h1>
-          <p className="mt-4 section-content-text">Accelerating You Into a New Era of Trading.</p>
-        </div>
-        <div className="Home_dashboard_button-content justify-content-center text-center mt-3">
-          <button className="border py-3 px-4">Download</button>
-          <button className="border py-3 px-4">Purchase Swift Pro</button>
+export const HowToStart: React.FC<PageProps> = (): JSX.Element => {
+  
+  return (
+    <div className='HowToStart'>
+      <div className="HowToStart_dashboard">
+        <Image src={BackImg} className="HowToStart_dashboard_BackImg" />
+        <div className="text-start px-5 w-5 mx-5 pt-5 mt-3">
+          <h1 className="section-title">How to Start?</h1>
+          <p className="mt-4 section-content-text">Simply create an account with Swift and download the app to reap all the benefits that swift has to offer</p>
         </div>
       </div>
-      <div className="NodeUp_mission mx-auto mt-4">
-        <Row className="">
-          <Col xl={7}>
-            <Image src={Tablet} className="NodeUp_mission_image mt-5" />
-          </Col>
-          <Col xl={5} className="text-start mt-5 py-5 ps-5">
-            <h1 className="section-title mt-5 text-muted">Mission & Vision</h1>
-            <p className="mt-4 section-content-text">Our vision is to create a world where anyone can trade with confidence, regardless of their experience level or financial background.</p>
-          </Col>
-        </Row>
-        <div className="">
-          <p className="mt-5 pt-5 section-content-text text-center">Unlock the full Swift experience by downloading the bot today!</p>
-          <div className="justify-content-center d-flex mt-5">
-            <button className="NodeUp_mission_button px-4 py-2">Download</button>
+      <div className='HowToStart_getting-start d-flex'>
+        <div className="HowToStart_getting-start_content px-5" style={{backgroundColor: "#151515"}}>
+          <h1 className="mt-5 px-5 pt-3">Getting Started</h1>
+          <p className="mt-5 px-5">Enter your details to create an account or login with an existing account</p>
+          <div className="Home_getting-start_content_buttons px-5 d-flex mt-5">
+            <button className="border px-5 py-2 border">Login</button>
+            <div className='d-flex'>
+              <p className="my-2 mx-2">Don’t have an account?</p>
+              <Nav.Link className="Header_navlink my-2" href="#">SignUp</Nav.Link>
+            </div>
           </div>
         </div>
+        <div className="HowToStart_getting-start_imgs d-flex justify-content-center">
+            <Image src={phone3d} className="Home_what-swift_MoiterImg" />
+        </div>
       </div>
-      <div className="NodeUp_swiftTrade mt-5">
+      <div className='HowToStart_getting-start'>
         <Row className="">
-          <Col xl={5}>
-            <h1 className="section-title text-center mt-5 pt-2">Swift Trade Desktop</h1>
-            <Image src={Tablet} className="NodeUp_mission_image mt-5" />
-            <div className="justify-content-center d-flex mt-5">
-              <button className="NodeUp_mission_button px-4">Download</button>
-              <p className="mt-3 section-content-text px-5">Download our uninstaller</p>
-            </div>
-            <p className="mt-5 section-content-text px-5">Check out device and OS compatibility here</p>
+          <Col className='px-5 mt-4' xl={5}>
+            <Image src={BackImg10} width={350} />
           </Col>
-          <Col xl={2} className="justify-content-center d-flex">
-            <Image src={Rectangle} className="mt-5" height={530} />
-          </Col>
-          <Col xl={5} className="text-start mt-1 ps-5">
-            <h1 className="section-title text-center mt-5 pt-2">Swift Trade Desktop</h1>
-            <div className="justify-content-center d-flex NodeUp_phon">
-              <Image src={phon1} className="mt-3" />
-              <Image src={phon2} className="mt-5" />
-            </div>
-            <div className="justify-content-center d-flex">
-              <Image src={appstore} className="mt-2" width={340} />
-            </div>
+          <Col xl={7} className="text-start py-5 px-5">
+            <h1 className="section-title pt-4 text-black">Download Swift</h1>
+            <p className="mt-5 section-content-text text-start text-black">Download the bot for either Windows, MacOS, Android and iPhone. <br /><br />You can also use our bot on Telegram by searching @SwiftTrade and this will allow you to be able to utilise all of Swift’s features.</p>
           </Col>
         </Row>
       </div>
-      <div className="NodeUp_pricing mt-5 text-center">
+      <div className="HowToStart_pricing mt-5 text-center">
         <h1 className="section-title mt-5">Our Pricing</h1>
         <p className="mt-4 section-content-text">Oversee your collection, manage all your digital assets, and send your NFTs to another wallet with full transparency.</p>
         <div className="d-flex justify-content-center" style={{gap: "40px"}}>

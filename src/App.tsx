@@ -2,11 +2,9 @@ import React, { useReducer } from 'react';
 import { Layout } from "./Layout";
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { Home } from "./Pages/Home";
-import { Sources } from "./Pages/Sources";
-import { Loader } from "./Pages/Loader";
-import { NodeUp } from './Pages/NodeUp';
-import { Receive } from './Pages/Receive';
-import { Scan } from './Pages/Scan';
+import { About } from "./Pages/About";
+import { Download } from './Pages/Download';
+import { HowToStart } from './Pages/HowToStart';
 import { Ctx } from "./Context";
 
 // utils
@@ -26,39 +24,27 @@ function App(): JSX.Element {
           <Layout dispatch={dispatch}>
             <Routes>
               <Route path="/" element={
-                <NodeUp
+                <Home
                   state={state as StateInterface}
                   dispatch={dispatch}
                   ctx={Ctx}
                 />
               }/>
-              <Route path="/loader" element={
-                <Loader
-                  state={state as StateInterface}
-                  dispatch={dispatch}
-                  ctx={Ctx}
-                />
-              }/>
-              <Route path='/sources' element={
-                <Sources 
+              
+              <Route path='/about' element={
+                <About 
                   state={state as StateInterface}
                   dispatch={dispatch}
                 />
               }/>
-              <Route path='/home' element={
-                <Home 
+              <Route path='/download' element={
+                <Download 
                   state={state as StateInterface}
                   dispatch={dispatch}
                 />
               }/>
-              <Route path='/receive' element={
-                <Receive 
-                  state={state as StateInterface}
-                  dispatch={dispatch}
-                />
-              }/>
-              <Route path='/scan' element={
-                <Scan 
+              <Route path='/how_to_start' element={
+                <HowToStart 
                   state={state as StateInterface}
                   dispatch={dispatch}
                 />

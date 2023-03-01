@@ -16,7 +16,7 @@ export const Footer: React.FC<HeaderProps> = (): JSX.Element => {
   return (
     <footer className="Footer mt-5">
       <div className="d-flex justify-content-end px-2" style={{borderRadius: "2rem", marginTop: "-5%"}}>
-        <div className="Footer_subscribe d-flex justify-content-end py-2 px-3 d-flex">
+        {/* <div className="Footer_subscribe d-flex justify-content-end py-2 px-3 d-flex">
           <div className="">
             <h2 className="section-content-title" style={{fontSize: "18px", fontWeight: "bold"}}>Subscribe To get updated</h2>
             <p className="section-content-text" style={{fontSize: "15px"}}> Lorem ipsum dolor sit amet consectetur. Mi nibh venenatis in suscipit turpis.</p>
@@ -25,7 +25,21 @@ export const Footer: React.FC<HeaderProps> = (): JSX.Element => {
             <input type="email" className="px-3" placeholder="Enter your email" />
             <button className="px-3 ms-2">Subscribe Now</button>
           </div>
-        </div>
+        </div> */}
+        <Row className="Footer_subscribe">
+          <Col xs={7} className="mt-4 d-flex">
+            <div className="">
+              <h2 className="section-content-title" style={{fontSize: "18px", fontWeight: "bold"}}>Subscribe To get updated</h2>
+              <p className="section-content-text" style={{fontSize: "15px"}}> Lorem ipsum dolor sit amet consectetur. Mi nibh venenatis in suscipit turpis.</p>
+            </div>
+          </Col>
+          <Col className="mt-4">
+            <div className="d-flex justify-content-end Footer_email_form">
+              <input type="email" className="px-3 py-2" placeholder="Enter your email" />
+              <button className="px-3 py-2 ms-2">Subscribe Now</button>
+            </div>
+          </Col>
+        </Row>
       </div>
       <Row className="mt-5 pt-5">
         <Col className="mt-5 d-flex" xs={7}>

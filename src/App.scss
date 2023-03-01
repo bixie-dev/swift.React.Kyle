@@ -3,14 +3,14 @@ $contrast-color: #5BB166;
 $clear-color: #E2E2E2;
 
 *{
+  font-style: normal;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif !important;
 }
 body{
-  // background-color: #16191c;
-  // color: #fcfcfc;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif !important;
   font-size: 62.5%;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -71,14 +71,9 @@ body{
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 @import "./Pages/Home/Home.scss";
-@import "./Pages/Loader/Loader.scss";
-@import "./Pages/Sources/Sources.scss";
-@import "./Pages/NodeUp/NodeUp.scss";
-@import "./Pages/Scan/Scan.scss";
-@import "./Pages/Receive/Receive.scss";
+@import "./Pages/About/About.scss";
+@import "./Pages/Download/Download.scss";
+@import "./Pages/HowToStart/HowToStart.scss";
 
 @import "./Containers/Header/Header.scss";
 @import "./Containers/Footer/Footer.scss";
-
-@import "./Components/SwItem/SwItem.scss";
-@import "./Components/Dropdowns/SourceSortDropdown/SourceSortDropdown.scss";

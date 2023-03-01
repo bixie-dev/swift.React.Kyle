@@ -15,11 +15,11 @@ import Vector from "../../Assets/Discord.svg";
 import Insta from "../../Assets/Instagram.svg";
 import Social from "../../Assets/entypo-social_linkedin-with-circle.png";
 
-export const Sources: React.FC<PageProps> = (): JSX.Element => {
+export const About: React.FC<PageProps> = (): JSX.Element => {
 
   return(
-    <div className="Sources">
-      <div className='Sources_about text-center mt-5'>
+    <div className="About">
+      <div className='About_about text-center mt-5'>
         <h1 className="section-title py-3">About Us</h1>
         <h2 className="section-title mt-5 py-3">Why Choose Swift Trade?</h2>
         <p className="mt-2 section-content-text">Trade smarter, not harder - unleash lightning fast profits with our Telegram trading bot</p>
@@ -30,7 +30,7 @@ export const Sources: React.FC<PageProps> = (): JSX.Element => {
           </p>
         </div>
       </div>
-      <div className='Sources_traders text-start mt-5'>
+      <div className='About_traders text-start mt-5'>
         <div className="d-flex mt-5 pt-3">
           <Row>
             <Col>
@@ -45,7 +45,7 @@ export const Sources: React.FC<PageProps> = (): JSX.Element => {
           </Row>
         </div>
       </div>
-      <div className='Sources_traders text-start mt-5'>
+      <div className='About_traders text-start mt-5'>
         <div className="d-flex mt-5 pt-3">
           <Row>
             <Col>
@@ -60,7 +60,7 @@ export const Sources: React.FC<PageProps> = (): JSX.Element => {
           </Row>
         </div>
       </div>
-      <div className='Sources_traders text-start mt-5'>
+      <div className='About_traders text-start mt-5'>
         <div className="d-flex mt-5 pt-3">
           <Row>
             <Col>
@@ -75,7 +75,7 @@ export const Sources: React.FC<PageProps> = (): JSX.Element => {
           </Row>
         </div>
       </div>
-      <div className='Sources_about text-center mt-5'>
+      <div className='About_about text-center mt-5'>
         <h2 className="section-title mt-5 py-3">Developer / Founder</h2>
         <div className="d-flex mt-5 pt-3">
           <p className="section-content-text px-3">
@@ -83,7 +83,7 @@ export const Sources: React.FC<PageProps> = (): JSX.Element => {
           </p>
         </div>
       </div>
-      <div className='Sources_traders text-start mt-5'>
+      <div className='About_traders text-start mt-5'>
         <div className="d-flex mt-5 pt-3">
           <Row>
             <Col>

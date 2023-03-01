@@ -1,0 +1,70 @@
+.HowToStart{
+  &_dashboard {
+    & div {
+      width: 59%;
+      height: 250px;;
+    }
+
+    &_BackImg {
+      z-index: 0;
+      margin-top: -13px !important;
+      width: 620px;
+      height: auto;
+      margin-left: 50%;
+      position: absolute;
+      z-index: 0;
+    }
+  }
+  
+  &_getting-start {
+    gap: 0px;
+    position: relative;
+    background-color: #FFFF;
+
+    @media screen and (max-width: 900px) {
+
+      display: grid !important;
+
+      &_content {
+        width: 100% !important;
+      }
+
+      &_imgs {
+        width: 100% !important;
+      }
+    }
+
+    &_content {
+      width: 57%;
+    }
+
+    &_imgs {
+      width: 43%;
+      height: auto;
+      background-color: #D4A0FF;
+    }
+  }
+
+  &_pricing {
+    width: 80%;
+    margin-left: 10%;
+
+    @media screen and (max-width: 900px) {
+      & div {
+        display: grid !important;
+
+        & div {
+          & div:nth-of-type(1) {
+            display: flex !important;
+          }
+
+          & div {
+            & div {
+              display: flex !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
