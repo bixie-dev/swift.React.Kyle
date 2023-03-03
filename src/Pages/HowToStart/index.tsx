@@ -47,8 +47,8 @@ export const HowToStart: React.FC<PageProps> = (): JSX.Element => {
             <Image src={BackImg10} className='HowToStart_getting-start_backImg' width={350} />
           </Col>
           <Col xl={7} className="text-start HowToStart_getting-start_text py-5 px-5 mt-5">
-            <h1 className="section-title pt-4 text-black">Download Swift</h1>
-            <p className="mt-5 section-content-text text-start text-black">Download the bot for either Windows, MacOS, Android and iPhone. <br /><br />You can also use our bot on Telegram by searching @SwiftTrade and this will allow you to be able to utilise all of Swift’s features.</p>
+            <h1 className="section-title text-black">Download Swift</h1>
+            <p className="my-5 text-start text-black" style={{fontSize: 17, fontWeight: "bold"}}>Download the bot for either Windows, MacOS, Android and iPhone. <br /><br />You can also use our bot on Telegram by searching @SwiftTrade and this will allow you to be able to utilise all of Swift’s features.</p>
           </Col>
         </Row>
       </div>

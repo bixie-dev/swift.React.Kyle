@@ -10,11 +10,12 @@ import Tablet from "../../Assets/tablet.png";
 import phon1 from "../../Assets/phon1.png";
 import phon2 from "../../Assets/phon2.png";
 import appstore from "../../Assets/appstore.png";
+import googlePlay from "../../Assets/googleplay.png";
+import QRcode from "../../Assets/QRcode.png";
 import Logo from "../../Assets/g1406.png";
 import Vector_Enable from "../../Assets/Vector_Enable.png";
 import Vector_Disable from "../../Assets/Vector_Disable.png";
 import right from "../../Assets/right.png";
-import down from "../../Assets/down.png";
 
 export const Download: React.FC<PageProps> = (): JSX.Element => {
 
@@ -73,8 +74,22 @@ export const Download: React.FC<PageProps> = (): JSX.Element => {
               <Image src={phon1} className="mt-3" />
               <Image src={phon2} className="mt-5" />
             </div>
-            <div className="justify-content-center Download_appstore d-flex">
-              <Image src={appstore} className="mt-2" width={340} />
+            <div className="justify-content-center d-flex mt-4" style={{gap: 20}}>
+              <div className="">
+                <div className="justify-content-center d-flex">
+                  <Image src={appstore} className="mt-2" width={120} />
+                </div>
+                <div className="justify-content-center d-flex">
+                  <Image src={googlePlay} className="mt-2" width={170} />
+                </div> 
+              </div>
+              <div className="">
+                <div className="justify-content-center d-flex">
+                  <Image src={QRcode} className="mt-3" width={80} height={80} />
+                </div>
+                <p className="mt-2 section-content-text text-center">Scan me</p>
+              </div>
+              
             </div>
           </Col>
         </Row>
