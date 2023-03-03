@@ -56,10 +56,13 @@ export const Download: React.FC<PageProps> = (): JSX.Element => {
             <div className="justify-content-center d-flex mt-5 Download_download">
               <button className="Download_mission_button text-center py-2 px-4">Download 
               </button>
-              <p className="pt-2 section-content-text px-5">Download our uninstaller
-              <Image src={right} className="ms-1" width={10} height={9} /></p>
+              <button className="ms-3 section-content-text py-2 px-4 Home_directions_learnmore_button">Download our uninstaller
+              <Image src={right} className="ms-1" width={10} height={8} /></button>
             </div>
-            <p className="mt-5 section-content-text px-5">Check out device and OS compatibility here</p>
+            <div className="justify-content-center d-flex">
+              <button className="mt-5 section-content-text py-2 px-4 Home_directions_learnmore_button">Check out device and OS compatibility here
+              <Image src={right} className="ms-1" width={10} height={8} /></button>
+            </div>
           </Col>
           <Col xl={2} className="justify-content-center Download_line10 d-flex">
             <Image src={Rectangle} className="mt-5 Download_line10" height={530} />

@@ -176,6 +176,12 @@
     }
   }
   &_directions {
+    &_learnmore_button {
+      background: rgba(255, 255, 255, 0);
+      border: none;
+      border-radius: 2rem;
+    }
+
     &_cards {
       gap: 30px !important;
 
@@ -189,6 +195,10 @@
         border: 0.2px solid rgb(158, 153, 153);
         @media screen and (max-width: 400px) {
           width: 100% !important;
+        }
+
+        @media screen and (max-width: 900px) {
+          height: 300px;
         }
       }
     }

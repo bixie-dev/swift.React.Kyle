@@ -15,27 +15,11 @@ export const Header: React.FC<HeaderProps> = (): JSX.Element => {
   const navigate: NavigateFunction = useNavigate()
 
   return (
-    // <Navbar className="Header px-1 border-bottom" bg="dark" variant="dark">
-    //   <Container>
-    //     <Navbar.Brand className="flex" onClick={() => navigate("/")}>
-    //       <Image src={Logo} width={60} height={60} />
-    //       <strong className="Header_logo-text">Swift</strong>
-    //     </Navbar.Brand>
-    //     <Navbar.Toggle />
-    //     <Navbar.Collapse className="Header_menu justify-content-end">
-          // <Nav.Link className="Header_navlink" onClick={() => navigate("/about")}>About us</Nav.Link>
-          // <Nav.Link className="Header_navlink" onClick={() => navigate("/how_to_start")}>How to start</Nav.Link>
-          // <Nav.Link className="Header_navlink">Purchase</Nav.Link>
-          // <Nav.Link className="Header_navlink" onClick={() => navigate("/")}>Dashboard</Nav.Link>
-          // <Nav.Link className="Header_navlink download px-4 py-3" onClick={() => navigate("/download")}>Download</Nav.Link>
-    //     </Navbar.Collapse>
-    //   </Container>
-    // </Navbar>
     <Navbar className="Header px-1 border-bottom" collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand className="flex" onClick={() => navigate("/")}>
-          <Image src={Logo} width={60} height={60} />
-          <strong className="Header_logo-text">Swift</strong>
+        <Navbar.Brand className="d-flex" onClick={() => navigate("/")}>
+          <Image src={Logo} width={70} height={70} />
+          <h2 className="pt-3" style={{fontWeight: "bold", fontFamily: "sans-serif"}}>Swift</h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

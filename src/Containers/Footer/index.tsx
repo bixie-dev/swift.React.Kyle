@@ -19,8 +19,8 @@ export const Footer: React.FC<HeaderProps> = (): JSX.Element => {
         <Row className="Footer_subscribe">
           <Col xs={7} className="mt-4 d-flex">
             <div className="">
-              <h2 className="section-content-title" style={{fontSize: "18px", fontWeight: "bold"}}>Subscribe To get updated</h2>
-              <p className="section-content-text" style={{fontSize: "15px"}}> Lorem ipsum dolor sit amet consectetur. Mi nibh venenatis in suscipit turpis.</p>
+              <h2 className="section-content-title" style={{fontSize: "18px", fontWeight: "bold"}}>SUBSCRIBE TO GET UPDATE</h2>
+              <p className="section-content-text" style={{fontSize: "12px", color: "#ffff"}}> Lorem ipsum dolor sit amet consectetur. Mi nibh venenatis in suscipit turpis.</p>
             </div>
           </Col>
           <Col className="mt-4">
@@ -34,17 +34,23 @@ export const Footer: React.FC<HeaderProps> = (): JSX.Element => {
       <Row className="mt-2 d-flex Footer_content justify-content-center pt-3">
         <Col className="" xs={7}>
           <div className="d-flex mt-3 py-5">
-            <Image src={Logo} width={60} height={40} />
-            <h2 className="mx-2">Swift</h2>
+            <Image src={Logo} width={50} height={35} />
+            <h2 className="mx-3" style={{fontWeight: "bold", fontFamily: "sans-serif"}}>Swift</h2>
           </div>
-          <div className="section-content-text pt-3 text-start">
+          <div className="section-content-text pt-2 text-start">
             <p>© Swift Bot 2023</p>
             <p>All rights reserved</p>
           </div>
-          <div className="Footer_social-group d-flex mt-">
-            <Image src={Vector} width={25} height={25} />
-            <Image src={Insta} width={25} height={25} />
-            <Image src={Social} width={25} height={25} />
+          <div className="Footer_social-group d-flex pt-4">
+            <div className="icon-hover-white">
+              <Image src={Vector} width={25} height={25} />
+            </div>
+            <div className="icon-hover-white">
+              <Image src={Insta} width={25} height={25} />
+            </div>
+            <div className="icon-hover-white">
+              <Image src={Social} width={25} height={25} />
+            </div>
           </div>
         </Col>
         <Col className="" xl={3} md="auto">
@@ -74,7 +80,7 @@ export const Footer: React.FC<HeaderProps> = (): JSX.Element => {
         </Col>
         <Col className="mt-5" xs={1}></Col>
       </Row>
-      <hr className="my-3" />
+      <hr className="my-5" />
       <p className="section-content-text pb-3 text-center">Swift © 2023 Designed and Developed by Nova Labs</p>
     </footer>
   )
